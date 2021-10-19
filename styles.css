@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delete-btn {
+    width: 2em;
+    height: 2em;
+    border: none;
+    display: inline-block;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCA1MTIgNTEyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxwYXRoIGZpbGw9IiNFMDRGNUYiIGQ9Ik01MDQuMSwyNTZDNTA0LjEsMTE5LDM5Myw3LjksMjU2LDcuOUMxMTksNy45LDcuOSwxMTksNy45LDI1NkM3LjksMzkzLDExOSw1MDQuMSwyNTYsNTA0LjFDMzkzLDUwNC4xLDUwNC4xLDM5Myw1MDQuMSwyNTZ6Ij48L3BhdGg+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTI4NSwyNTZsNzIuNS04NC4yYzcuOS05LjIsNi45LTIzLTIuMy0zMWMtOS4yLTcuOS0yMy02LjktMzAuOSwyLjNMMjU2LDIyMi40bC02OC4yLTc5LjJjLTcuOS05LjItMjEuOC0xMC4yLTMxLTIuM2MtOS4yLDcuOS0xMC4yLDIxLjgtMi4zLDMxTDIyNywyNTZsLTcyLjUsODQuMmMtNy45LDkuMi02LjksMjMsMi4zLDMxYzQuMSwzLjYsOS4yLDUuMywxNC4zLDUuM2M2LjIsMCwxMi4zLTIuNiwxNi42LTcuNmw2OC4yLTc5LjJsNjguMiw3OS4yYzQuMyw1LDEwLjUsNy42LDE2LjYsNy42YzUuMSwwLDEwLjItMS43LDE0LjMtNS4zYzkuMi03LjksMTAuMi0yMS44LDIuMy0zMUwyODUsMjU2eiI+PC9wYXRoPjwvc3ZnPg==') no-repeat;
+    background-size: 100%;
+    transition: opacity 0.2s linear;
+    cursor: pointer;
+}
+
+.delete-btn:active {
+    opacity: 0.5;
+}
+
+.task-add {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task-list {
+    width: 50%;
+}
+
+.task-add > input {
+    margin-right: 2%;
+    border: none;
+    width: 75%;
+    border-bottom: 1px solid #70587c;
+    flex: 4 1 200px;
+    font-size: 1.1em;
+}
+
+.task-add > input:focus {
+    outline: none;
+    border-bottom: 1px solid #922abd;
+}
+
+.task-add > button {
+    flex: 1 1 50px;
+    width: 15%;
+    border: none;
+    background-color: #c8b9da;
+    color: white;
+    height: 2.3em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.task-add > button:focus {
+    outline: none;
+    opacity: 0.8;
+    background-color: #a986cc;
+}
+
+.task-add > button:active {
+    background-color: #9c6cce;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+ul > li {
+    margin: 1.5em 0;
+}
+
+.task-item {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 8fr 1fr;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+
+
